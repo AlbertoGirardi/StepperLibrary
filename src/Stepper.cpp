@@ -78,6 +78,7 @@
 #include "Arduino.h"
 #include "Stepper.h"
 
+
 /*
  * two-wire constructor.
  * Sets which wires should control the motor.
@@ -172,9 +173,9 @@ Stepper::Stepper(int number_of_steps, int motor_pin_1, int motor_pin_2,
 /*
  * Sets the speed in revs per minute
  */
-void Stepper::setSpeed(long whatSpeed)
+void Stepper::setSpeed(double whatSpeed)
 {
-  this->step_delay = 60L * 1000L * 1000L / this->number_of_steps / whatSpeed;
+  this->step_delay =  int( 60.0 * 10000.0 * 1000.0 / this->number_of_steps / whatSpeed) ;
 }
 
 /*
