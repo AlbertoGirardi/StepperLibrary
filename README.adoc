@@ -1,5 +1,5 @@
 :repository-owner: arduino-libraries
-:repository-name: Stepper
+:repository-name: StepperFrac
 
 = {repository-name} Library for Arduino =
 
