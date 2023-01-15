@@ -1,4 +1,4 @@
-# Stepper library
+# StepperF library
 
 ## Methods
 
@@ -36,7 +36,7 @@ Stepper myStepper = Stepper(100, 5, 6);
 
 ### `setSpeed()`
 
-This function sets the motor speed in rotations per minute (RPMs). This function doesn't make the motor turn, just sets the speed at which it will when you call step().
+This function sets the motor speed in rotations per minute (RPMs). This function doesn't make the motor turn, just sets the speed at which it will when you call step(). It is possible to indicate a fractional (double data type) rotation velocity (eg 3.5 rpm).
 
 #### Syntax
 
@@ -46,7 +46,7 @@ setSpeed(rpms)
 
 #### Parameters
 
-* `rpms`: the speed at which the motor should turn in rotations per minute (positive long).
+* `rpms`: the speed at which the motor should turn in rotations per minute (double).
 
 #### Returns
 
