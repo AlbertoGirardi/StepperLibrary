@@ -175,9 +175,10 @@ Stepper::Stepper(int number_of_steps, int motor_pin_1, int motor_pin_2,
  */
 void Stepper::setSpeed(double whatSpeed)
 {
-  Serial.prinln("setSpeed");
+  Serial.println("setSpeed");
   this->step_delay =  int( 60.0 * 10000.0 * 1000.0 / this->number_of_steps / whatSpeed) ;
   Serial.println( this->step_delay );
+  //AAAAAAAAAAAA
 }
 
 /*
